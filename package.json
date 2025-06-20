@@ -2,11 +2,13 @@
   "name": "e-commerce-backend",
   "version": "1.0.0",
   "main": "app.ts",
-  "scripts": {
-    "dev": "nodemon app.ts",
-    "start": "app.ts",
+    "scripts": {
+    "dev": "ts-node app.ts",
+    "start": "ts-node app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnandiParmar/E-commerce-Backend.git"
