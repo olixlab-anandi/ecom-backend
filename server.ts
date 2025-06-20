@@ -23,7 +23,7 @@ const server = createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.ORIGIN || "http://localhost:5173",
+    origin: "*",
   },
 });
 
@@ -33,8 +33,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: process.env.ORIGIN || "*",
-    credentials: true,
+    origin: "*",
   })
 );
 
